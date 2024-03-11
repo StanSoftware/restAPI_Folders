@@ -84,7 +84,7 @@ const config = {
           {
             type: 'docsVersion',
             position: 'left', 
-            label: 'Rest API Documentation',
+            label: 'API Documentation',
           },
           
           //{to: '/Silent Login', label: 'Silent Login', position: 'left'},
