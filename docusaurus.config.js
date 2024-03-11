@@ -8,19 +8,19 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'SharePro RestAPI Document',
+  title: 'API Documentation',
   tagline: 'Connect , Fetch and Integrate',
   favicon: 'img/ImgScheduler.jpg',
 
   // Set the production url of your site here
-  url: 'https://abhaysobti.github.io',
+  url: 'https://stansoftware.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/restAPIDocs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'abhaysobti', // Usually your GitHub org/user name.
+  organizationName: 'stansoftware', // Usually your GitHub org/user name.
   projectName: 'restAPI', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -60,26 +60,34 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+  themeConfig: 
+  /** @type {import('@docusaurus/present-classic').themeConfig} */
+  ({
       // Replace with your project's social card
+
+          docs: {
+            sidebar: {
+              hideable: true,
+            },
+          },
+
       image: 'img/sharepro.png',
       navbar: {
-        title: 'Home',
+        
         logo: {
           alt: 'My site Logo',
           src: 'img/sharepro.png',
         },
+        hideOnScroll: true,
 
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'docsVersion',
             position: 'left', 
-            label: 'RestAPI Documentation',
+            label: 'Rest API Documentation',
           },
-          {to: '/Silent Login', label: 'Silent Login', position: 'left'},
+          
+          //{to: '/Silent Login', label: 'Silent Login', position: 'left'},
           // {
           //  href: 'https://github.com/facebook/docusaurus',
           //  label: 'GitHub',
