@@ -198,7 +198,7 @@ While constructing the URL for displaying a report, there are some standard para
 |datefrom|Starting Date for the report|01/04/22|
 |dateto|the Ending Date for the report|31/03/23|
 |ucc|The UCC of a client, if required|ABS|
-|accyear|account year from the QueryString|2223|
+|accyear [optional]|Account year for fetching report. If not supplied, it will assume the currently running Accounting year |2223|
 
 </span>
 ---
