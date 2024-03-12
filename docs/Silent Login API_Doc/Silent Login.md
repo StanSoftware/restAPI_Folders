@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 <span style={{"font-size":"26px"}}>
 Technical Documentation
 </span>
@@ -195,11 +198,8 @@ While constructing the URL for displaying a report, there are some standard para
 |datefrom|Starting Date for the report|01/04/22|
 |dateto|the Ending Date for the report|31/03/23|
 |ucc|The UCC of a client, if required|ABS|
-<<<<<<< HEAD
-
-=======
 |accyear|account year from the QueryString|2223|
->>>>>>> f3b3498bd501583f69e3711932ffa39f4e7120d3
+
 </span>
 ---
 
