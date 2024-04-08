@@ -194,10 +194,17 @@ While constructing the URL for displaying a report, there are some standard para
 |branchid|Branch ID, if the report is required for a particular branch,|HO<br/>KOL,MUM<br/>|
 |stno|Settlement Number|2022022|
 |sttype|Settlement Type|N<br/>W<br/>Z<br/>|
+|subcd|Client Internal Code. Leftmost column in the Client Master Window.|CA00000001|
+|itemcd|Scrip Internal Code. Leftmost column in the Scrips Master Window|S000000003|
+|tt|Two-digit Bank code in the Account Heads Master|HD|
+|accd|G/L Account Head internal Code|2003|
+|subcode|Account sub-ledger internal code or Client internal code|114, 158|
+|BenAcNum|Depository BOID or Beneficery Account Code|00000032|
 |date|Date for the report.<br/>For example, you can pass a string in dd/mm/yy format to the trade register to see the register for a particular date<br/>|22/08/22|
 |datefrom|Starting Date for the report|01/04/22|
 |dateto|the Ending Date for the report|31/03/23|
 |ucc|The UCC of a client, if required|ABS|
+|lIncludeLiveData|.T. to fetch the Live data that is inserted in realtime from the  LIVE RMS system|.T. or .F.|
 |accyear [optional]|Account year for fetching report. If not supplied, it will assume the currently running Accounting year |2223|
 
 </span>
