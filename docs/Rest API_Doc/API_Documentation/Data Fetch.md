@@ -159,6 +159,8 @@ sidebar_position: 1
             "AnnualIncome": "Rs. 1000000 - 2500000",
             "RMCode": null,
             "RMName": null
+            "CTCLSystems": " ",
+            "NomOptoutDt": "2023-03-21T00:00:00"
           }
         ]
 
