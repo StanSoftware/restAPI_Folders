@@ -3020,6 +3020,88 @@ The PDF/Image will be returned in Base64 format.
 ___
 
 
+## GetStateCodeList ##
+
+**Endpoint** : getStateCodeList
+
+**Method** : **POST** or **GET**   |  Send raw **Json** data in **Body**
+*Get State Code Details | Get all state code list | Get state code search by Descr*
+
+
+
+<pre language="html">
+<table style={{"width":"100%"}}>
+  <thead style={{"height":"25px","padding":"10px"}}>
+    <tr>
+      <th>Data </th>
+      <th>UAT Sample</th>
+     </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td colspan="2">**JSon Request:**</td>
+    </tr>
+    <tr>
+    <td>
+      ```
+      {
+    "key": "<<RestAPI Key>>",  * mandatory 
+    "cSearch": "<<Search by  descr>>",
+    "cStateCd": "<<StateCode>>",
+    "cGSTStateCd": "<<GSTStateCd>>",
+    "cGSTStateNo": "<<GSTStateNo>>"
+}
+      ```
+    </td>
+      <td>
+      ```
+      {
+    "key": "ezhDMEI5ND4MLE3YwNH0=",
+    "cSearch": "West Bengal"  * Optional 
+    ( If not send then show all states) 
+    }
+      ```
+    </td>
+    </tr>
+
+    <tr  style={{"height":"20px","padding":"10px"}}>
+      <td colspan="2">**JSon Response:**</td>
+    </tr>
+    <tr>
+      <td>
+       ```
+       [
+        {
+        "STATECD",
+        "DESCR",
+        "GSTSTATECD”,
+        "GSTSTATENO"
+        }
+      ]
+        ```
+      </td>
+      <td>
+        ```
+        [
+          {
+            "STATECD": "WB  ",
+            "DESCR": "West Bengal",
+            "GSTSTATECD": "WB",
+            "GSTSTATENO": "19"
+          }
+        ]
+        ```
+      </td>
+    </tr>
+  </tbody>
+</table>
+</pre>
+
+
+___
+
+
 
 
 
