@@ -766,3 +766,85 @@ These calls require a separate License from StanSoft
 </pre>
 
 ___
+
+## updateClientRegStatus
+**Endpoint** : updateClientRegStatus
+**Method** : **POST** or **GET**   |  Send raw **Json** data in **Body**  
+Update client’s registration status in Trading
+
+
+<pre language="html">
+<table style={{"width":"100%"}}>
+  <thead style={{"height":"25px","padding":"10px"}}>
+  <tr>
+  <th> Data </th>
+  <th> UAT Sample </th>
+  </tr>
+ </thead>
+
+  <tbody>
+    <tr>
+      <td colspan="2">**JSon Request:**</td>
+    </tr>
+    <tr>
+    <td>
+      ```
+{"key": "<<RestAPI Key>>",
+"ucc":
+"status",*The status values can be: Active, 
+          Suspended, Dormant,    
+          ReActivated, Closed
+          "segment"
+}
+      ```
+    </td>
+    <td>
+      ```
+{
+  "key": "ezhDMEI5ND4MLE3YwNH0=",
+  "ucc": "L18000",
+  "status": "Active"
+}
+```
+    </td>
+    </tr>
+
+    <tr  style={{"height":"20px","padding":"10px"}}>
+      <td colspan="2">**JSon Response:**</td>
+    </tr>
+    <tr>
+      <td>
+ ```
+{
+  "success"
+  "message"
+}
+```
+</td>
+      <td>
+```
+{
+  "success": 1,
+  "message": "Success: Status updated 
+                       in Backoffice"
+}
+```
+</td>
+    </tr>
+  </tbody>
+</table>
+</pre>
+
+<pre language="html">
+<table style={{"width":"100%"}}>
+  <thead style={{"height":"25px","padding":"10px"}}>
+  </thead>
+  <tr>
+  <td colspan="2">**RESTAPI for AP Interfaces**</td>
+RestAPI calls for AP Level User interfaces.
+These calls require a separate License from StanSoft
+  </tr>
+</table>
+</pre>
+
+___
