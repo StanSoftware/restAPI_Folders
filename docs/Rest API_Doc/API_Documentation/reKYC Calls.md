@@ -789,12 +789,29 @@ Update client’s registration status in Trading
     <tr>
     <td>
       ```
-{"key": "<<RestAPI Key>>",
-"ucc":
-"status",*The status values can be: Active, 
-          Suspended, Dormant,    
-          ReActivated, Closed
-          "segment"
+{
+"key":"<<RestAPI Key>>",
+             "ucc":
+  
+"status",<<Reg Status>>
+            Active,
+            Suspended
+            Dormant,
+            ReActivated,
+            Closed 
+"segment" <<Choose Segment>>
+           ALL
+           NSE-CM
+           NSE-F&O
+           NSE-CDS
+           NSE-SLBM
+           NSE-COMM
+           BSE-CM
+           MCX
+           CDSL
+           BSE-CDS
+           MTF
+           BSE-F&O
 }
       ```
     </td>
@@ -803,7 +820,8 @@ Update client’s registration status in Trading
 {
   "key": "ezhDMEI5ND4MLE3YwNH0=",
   "ucc": "L18000",
-  "status": "Active"
+  "status":"Active",
+  "segment":"NSE-CM"
 }
 ```
     </td>
@@ -824,10 +842,8 @@ Update client’s registration status in Trading
       <td>
 ```
 {
-  "success": 1,
-  "message": "Success: Status updated 
-                       in Backoffice"
-}
+"success": 1,
+"message": "Success: Status updated in Backoffice"
 ```
 </td>
     </tr>
