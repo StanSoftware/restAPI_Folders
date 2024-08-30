@@ -800,7 +800,7 @@ Update client’s registration status in Trading
             ReActivated,
             Closed 
 "segment" <<Choose Segment>>
-           ALL
+           ALL [Default]
            NSE-CM
            NSE-F&O
            NSE-CDS
