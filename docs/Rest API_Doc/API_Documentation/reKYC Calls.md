@@ -133,8 +133,14 @@ ___
         "<<Search whether mobile is mapped?>>"
         Note: Need to provide Mobile , MobileSec1 , 
         MobileSec2, pass minimum one parameter. * mandatory
+        "MobileStat": "<<Self,Spouse,Dependent Children,Dependent Parent,Authorized,Contact Person>>"
       }
+      
+     
+     
       ```
+      
+      
     </td>
       <td>
       ```
@@ -271,9 +277,10 @@ ___
         Ignore for not want change>>",
         "OldEmail": "<<Validate with any Old Email>>",
         "CheckEmailAlreadyExists": 
-        "<<Search whether email id is mapped?>"
+        "<<Search whether email id is mapped?>",
+        "EmailStat": "<<Self,Spouse,Dependent Children,Dependent Parent,Authorized,Contact Person>>"
       }
-      ```
+    ```
     </td>
       <td>
       ```

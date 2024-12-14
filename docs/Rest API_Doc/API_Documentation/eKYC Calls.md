@@ -203,7 +203,9 @@ ___
 |cEmail|char(80)||
 |cMobile|char(40)||
 |FmlyEmailFlag|bit|**Family Email Flag**<br/>0 : No<br/>1 : Yes<br/>|
+|EmailStat|char(40)|(Self,Spouse,Dependent Children,Dependent Parent,Authorized,Contact Person)|
 |FmlyMobileFlag|bit|**Family Mobile Flag**<br/>0 : No<br/>1 : Yes<br/>|
+|MobileStat|char(40)|(Self,Spouse,Dependent Children,Dependent Parent,Authorized,Contact Person)|
 |***KRA***|
 |cKraApplDt|datetime|KRA Application date (yyyy-MM-dd)|
 |cKraOccupation|varchar(2)|01 : Private Sector Service<br/>02 : Public Sector / Government Service<br/>03 : Business<br/>04 : Professional<br/>05 : Agriculturist<br/>06 : Retired<br/>07 : Housewife<br/>08 : Student<br/>09 : Forex Dealer<br/>99 : Others (please specify)<br/>|
