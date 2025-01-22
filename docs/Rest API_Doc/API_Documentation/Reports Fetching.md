@@ -325,6 +325,7 @@ ___
       {
         "key": "<<RestAPI Key>>",
         "ucc": "<<UCC>>"
+        "segments":"NFO"
         "accyear": "<<Like : 2223>>"
         Note: If you do not pass accyear parameter, 
         then we find it in the latest current year database.
@@ -336,6 +337,7 @@ ___
       {
         "key": "ezhDMEI5ND4MLE3YwNH0",
         "ucc": "151A355"
+        "segments":"NFO"
       }
       ```
     </td>
