@@ -696,20 +696,19 @@ ___
     <td>
       ```
 {
-    "key"          : API Key
-    "gateway"      : Payment gateway like RAZOR, ATOM
-    "ucc"          : Client Id
-    "system"       : System - Segment like NSE, BSE
-    "dateTime"     : dateTime of funds transfer. Format: "dd/MM/yyyy hh:mm:ss"
-    "amount"       : Funds transferred amount. like 100.50
-    "merchantRefNo": Merchant Transaction Reference Number.
-    "gatewayRefNo" : Payment Gateway Reference Number. 
-    "bankRefNo"    : Bank Reference Number. 
-    "upiId"        : UPI Id from which funds transferred. Available only for UPI funds transfer. Like: testupi@upibank
-    "fromAccNo"    : Account No from which funds transferred.
-    "toAccNo"      : Account No to which funds transferred.
-    "payMode"      : Payment mode like : Debit Card, Net Banking, UPI 
-    
+   "key"          : API Key   (𝗺𝗮𝗻𝗱𝗮𝘁𝗼𝗿𝘆)
+   "gateway"      : Payment gateway like RAZOR, ATOM  (𝗺𝗮𝗻𝗱𝗮𝘁𝗼𝗿𝘆) 
+   "ucc"          : Client Id
+   "system"       : System - Segment like NSE, BSE
+   "dateTime"     : dateTime of funds transfer. Format: "dd/MM/yyyy hh:mm:ss"
+   "amount"       : Funds transferred amount. like 100.50  (𝗺𝗮𝗻𝗱𝗮𝘁𝗼𝗿𝘆) 
+   "merchantRefNo": Merchant Transaction Reference Number.
+   "gatewayRefNo" : Payment Gateway Reference Number. 
+   "bankRefNo"    : Bank Reference Number.  (𝗺𝗮𝗻𝗱𝗮𝘁𝗼𝗿𝘆) 
+   "upiId"        : UPI Id from which funds transferred. Available only for UPI funds transfer. Like: testupi@upibank
+   "fromAccNo"    : Account No from which funds transferred.  (𝗺𝗮𝗻𝗱𝗮𝘁𝗼𝗿𝘆) 
+   "toAccNo"      : Account No to which funds transferred.
+   "payMode"      : Payment mode like : Debit Card, Net Banking, UPI 
 }
       ```
     </td>
