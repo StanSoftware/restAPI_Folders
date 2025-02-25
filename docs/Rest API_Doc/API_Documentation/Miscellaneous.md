@@ -674,3 +674,90 @@ Generate Cash Bank Voucher in SharePro (PayIn / PayOut)
 
 ___
 
+## generateOnlineJV
+**Endpoint** : generateOnlineJV
+
+**Method** : **POST** or **GET**   |  Send raw **Json** data in **Body**  
+
+<pre language="html">
+<table style={{"width":"100%"}}>
+  <thead style={{"height":"25px","padding":"10px"}}>
+  <tr>
+  <th> Data </th>
+  <th> UAT Sample </th>
+  </tr>
+ </thead>
+
+  <tbody>
+    <tr>
+      <td colspan="2">**JSon Request:**</td>
+    </tr>
+    <tr>
+    <td>
+      ```
+{
+    "key"          : API Key
+    "gateway"      : Payment gateway like RAZOR, ATOM
+    "ucc"          : Client Id
+    "system"       : System - Segment like NSE, BSE
+    "dateTime"     : dateTime of funds transfer. Format: "dd/MM/yyyy hh:mm:ss"
+    "amount"       : Funds transferred amount. like 100.50
+    "merchantRefNo": Merchant Transaction Reference Number.
+    "gatewayRefNo" : Payment Gateway Reference Number. 
+    "bankRefNo"    : Bank Reference Number. 
+    "upiId"        : UPI Id from which funds transferred. Available only for UPI funds transfer. Like: testupi@upibank
+    "fromAccNo"    : Account No from which funds transferred.
+    "toAccNo"      : Account No to which funds transferred.
+    "payMode"      : Payment mode like : Debit Card, Net Banking, UPI 
+    
+}
+      ```
+    </td>
+      <td>
+      ```
+{
+    "key"          : "ezhDMEI5ND4MLE3YwNH0=",
+    "gateway"      : "ATOM",
+    "ucc"          : "54483",
+    "system"       : "NSE",
+    "dateTime"     : "19/02/2025 11:26:45",
+    "amount"       : "100.00",
+    "merchantRefNo": "",
+    "gatewayRefNo" : "",
+    "bankRefNo"    : "UTR12587845124",
+    "upiId"        : "",
+    "fromAccNo"    : "030501502985",
+    "toAccNo"      : "",
+    "payMode"      : "Net Banking"
+}
+      ```
+    </td>
+    </tr>
+
+    <tr  style={{"height":"20px","padding":"10px"}}>
+      <td colspan="2">**JSon Response:**</td>
+    </tr>
+    <tr>
+      <td>
+        ```
+        {
+          "success": <<1:Success, 0: Failure>>,
+          "message":”<<Message>>"
+        }
+        ```
+      </td>
+      <td>
+        ```
+        {
+    "success": 1,
+    "message": "Data save Successfully in SharePro"
+        }
+        ```
+      </td>
+    </tr>
+  </tbody>
+</table>
+</pre>
+
+___
+
