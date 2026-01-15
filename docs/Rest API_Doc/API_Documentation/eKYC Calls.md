@@ -183,7 +183,7 @@ ___
 |cAdd1|varchar(50)||
 |cAdd2|	varchar(50)||
 |cAdd3|varchar(50)||
-|cCity|varchar(25)||
+|cCity|varchar(25)|Please refer to this link get city list *https://docs.google.com/spreadsheets/d/1Mpou9hrcZUlQibfsM58J3Kw-JFkqAMuHZ4apR2OvTaE/edit?usp=sharing*|
 |cPin|char(10)||
 |*cStateCd|char(4)|Please refer to *<u>getStateCodeList</u>* call to get a list of States with the broker. Send **STATECD**|
 |cCountry|varchar(35)|Like : *'India'*|
@@ -308,6 +308,8 @@ ___
 |cREG_BMFS|bit||
 |cREG_NSLB|bit|NSE-SLBM|
 |cREG_NSPT|bit||
+|cREG_NFOCOM|bit|NSE-CO|
+|cREG_BFOCOM|bit|BSE-CO|
 |IBTActive|datetime|yyyy-MM-dd|
 |FATCAReceivedDate|datetime|yyyy-MM-dd|
 |cHoldDlvry|bit|**Always Hold<br/>Traded purchase shares hold by broker?**<br/>0 : No<br/>1 : Yes<br/>|
@@ -477,6 +479,9 @@ ___
 |dSREffectDate|datetime||
 |cSRCd|char(10)||
 |eContract|bit|**Clients take e-contract ?**<br/>0 : No<br/>1 : Yes<br/>|
+|DoNotPrint|bit|**Do not print physical contract?**<br/>0 : No<br/>1 : Yes<br/>|
+|Web_login|bit|**Client can login from web?**<br/>0 : No<br/>1 : Yes<br/>|
+|Web_Pwd|char(10)|Web Login Password. If the **Web_login** parameter is passed as 1 but the **Web_Pwd** parameter is **blank**, the web password will be set as the PAN number|
 |**NETWORTH-- PMLA**|
 |cACC_DateDESCR|char(9)|Financial year (Like 2021-2022)|
 |nGROSSINCOME|numeric(16, 2)|Gross Income|
@@ -485,7 +490,7 @@ ___
 |BusiCommenceDt|datetime|Business commencement date (yyyy-MM-dd)|
 |cClientWithOthTM|char(1)|**Client account with another TM ?**<br/>Y : Yes<br/>N : No<br/>|
 |NMFS_occupation|char(2)|1 : Business<br/>2 : Service<br/>3 : Professional<br/>4 : Agriculture<br/>5 : Retired<br/>6 : Housewife<br/>7 : Student<br/>8 : Others<br/>|
-|NMFS_state|char(2)|Need to pass **GSTSTATECD** Please refer to *<u>getStateCodeList</u>* call to get a list of States with the broker|
+|NMFS_state|char(2)|Please refer to *<u>getKRAStateCodeList</u>* call to get a list of NMFS States, pass **"cSystem": "NMF"**|
 |**Funding Rate of Interest**|
 |***<u>Normal Interest Segment Type</u>***
 |InterestEffectDate|datetime|Normal Interest EffectDate (yyyy-MM-dd)|
