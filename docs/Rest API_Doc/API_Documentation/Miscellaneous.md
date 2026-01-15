@@ -760,3 +760,186 @@ ___
 
 ___
 
+
+## Arbitrage summary
+**Endpoint** : ArbitrageSum
+
+**Method** : **POST** or **GET**   |  Send raw **Json** data in **Body**  
+
+<pre language="html">
+<table style={{"width":"100%"}}>
+  <thead style={{"height":"25px","padding":"10px"}}>
+  <tr>
+  <th> Data </th>
+  <th> UAT Sample </th>
+  </tr>
+ </thead>
+
+  <tbody>
+    <tr>
+      <td colspan="2">**JSon Request:**</td>
+    </tr>
+    <tr>
+    <td>
+      ```
+{
+
+    "key": "<<RestAPI Key>>",
+    "ucc": "<<UCC>>",
+    “datefrom": "<<dd/MM/yyyy>>",
+    “datefrom": "<<dd/MM/yyyy>>",
+
+}
+      ```
+    </td>
+      <td>
+      ```
+{
+
+    "key": "ezM4MEQyQTJBLUE0Q0ItNDY2OS05QjgwLTQxMjZDNTFBOEMyQn0=",
+    "ucc": "JOB2",
+    "datefrom": "03/04/2025",
+    "dateto": "10/04/2025"
+}
+      ```
+    </td>
+    </tr>
+
+    <tr  style={{"height":"20px","padding":"10px"}}>
+      <td colspan="2">**JSon Return_Data::**</td>
+    </tr>
+    <tr>
+      <td>
+        ```
+       {
+    "clientmtm": [
+        {
+            "bcofut":"<<bcofut>>",
+            "bcoopt":"<<bcoopt>>",
+            "cdsfut":"<<cdsfut>>",
+            "cdsopt":"<<cdsopt>>",
+            "chrgsbco":"<<chrgsbco>>",
+            "chrgscds":"<<chrgscds>>",
+            "chrgseq":"<<chrgseq>>",
+            "chrgsfo":"<<chrgsfo>>",
+            "chrgsmcf":"<<chrgsmcf>>",
+            "chrgsncf":"<<chrgsncf>>",
+            "chrgsnco":"<<chrgsnco>>",
+            "eqeq":"<<eqeq>>",
+            "exmrgnbco":"<<exmrgnbco>>",
+            "exmrgncds":"<<exmrgncds>>",
+            "exmrgneq":"<<exmrgneq>>",
+            "exmrgnfo":"<<exmrgnfo>>",
+            "exmrgnmcf":"<<exmrgnmcf>>",
+            "exmrgnncf":"<<exmrgnncf>>",
+            "exmrgnnco":"<<exmrgnnco>>",
+            "foeq":"<<foeq>>",
+            "fofut":"<<fofut>>",
+            "foopt":"<<foopt>>",
+            "mcffut":"<<mcffut>>",
+            "mcfopt":"<<mcfopt>>",
+            "ncffut":"<<ncffut>>",
+            "ncfopt":"<<ncfopt>>",
+            "ncofut":"<<ncofut>>",
+            "ncoopt":"<<ncoopt>>",
+            "netchrgs":"<<netchrgs>>",
+            "netexmrgn":"<<netexmrgn>>",
+            "netmtm":"<<netmtm>>",
+            "netpl":"<<netpl>>",
+            "netrecpay":"<<netrecpay>>",
+            "netsmrgn":"<<netsmrgn>>",
+            "netto":"<<netto>>",
+            "smrgnbco":"<<smrgnbco>>",
+            "smrgncds":"<<smrgncds>>",
+            "smrgneq":"<<smrgneq>>",
+            "smrgnfo":"<<smrgnfo>>",
+            "smrgnmcf":"<<smrgnmcf>>",
+            "smrgnncf":"<<smrgnncf>>",
+            "smrgnnco":"<<smrgnnco>>",
+            "subcd":"<<subcd>>",
+            "tobco":"<<tobco>>",
+            "tocds":"<<tocds>>",
+            "toeq":"<<toeq>>",
+            "tofo":"<<tofo>>",
+            "tomcf":"<<tomcf>>",
+            "toncf":"<<toncf>>",
+            "tonco":"<<tonco>>",
+            "trdt": "<<trdt>>"
+        },
+        …………..
+    ]
+}
+ 
+
+        ```
+      </td>
+      <td>
+        ```
+      {
+
+    "clientmtm": [
+
+        {
+            "bcofut": 0,
+            "bcoopt": 0,
+            "cdsfut": 0,
+            "cdsopt": 0,
+            "chrgsbco": 0,
+            "chrgscds": 0,
+            "chrgseq": 0,
+            "chrgsfo": 0,
+            "chrgsmcf": 0,
+            "chrgsncf": 0,
+            "chrgsnco": 0,
+            "eqeq": 0,
+            "exmrgnbco": 0,
+            "exmrgncds": 0,
+            "exmrgneq": 0,
+            "exmrgnfo": 0,
+            "exmrgnmcf": 0,
+            "exmrgnncf": 0,
+            "exmrgnnco": 0,
+            "foeq": 0,
+            "fofut": 0,
+            "foopt": 0,
+            "mcffut": 0,
+            "mcfopt": 0,
+            "ncffut": 0,
+            "ncfopt": 0,
+            "ncofut": 0,
+            "ncoopt": 0,
+            "netchrgs": 0,
+            "netexmrgn": 0,
+            "netmtm": 0,
+            "netpl": 0,
+            "netrecpay": 0,
+            "netsmrgn": 0,
+            "netto": 0,
+            "smrgnbco": 0,
+            "smrgncds": 0,
+            "smrgneq": 0,
+            "smrgnfo": 0,
+            "smrgnmcf": 0,
+            "smrgnncf": 0,
+            "smrgnnco": 0,
+            "subcd": "CA00000001",
+            "tobco": 0,
+            "tocds": 0,
+            "toeq": 0,
+            "tofo": 0,
+            "tomcf": 0,
+            "toncf": 0,
+            "tonco": 0,
+            "trdt": "2025-04-02T18:30:00Z"
+        },
+        …………..
+    ]
+}
+   ```
+      </td>
+    </tr>
+  </tbody>
+</table>
+</pre>
+
+___
