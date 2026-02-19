@@ -808,17 +808,20 @@ Update client’s registration status in Trading
             Closed 
 "segment" <<Choose Segment>>
            ALL [Default]
-           NSE-CM
-           NSE-F&O
-           NSE-CDS
-           NSE-SLBM
-           NSE-COMM
-           BSE-CM
-           MCX
+           NSE-Cm = NSE
+           NSE-F&O = NFO
+           NSE-CDS = CNFO
+           NSE-SLBM = NSLB
+           NSE-COMM = NFOCOM
+           BSE-CM = BSE
+           BSE-F&O = BFO
+           BSE-CDS = CBFO
+           BSE COMM = BFOCOM
+           MCX = MCFO
+           MSEI-EQ =MXEQ
+           MSE- FO =MXFO
+           MTF = MTF
            CDSL
-           BSE-CDS
-           MTF
-           BSE-F&O
 }
       ```
     </td>

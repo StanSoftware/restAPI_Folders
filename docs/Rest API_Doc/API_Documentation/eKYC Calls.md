@@ -446,6 +446,10 @@ ___
 |cBrkgBasketCOMM|char(10)|Brokerage COMM Basket Code|
 |cBrkgBasketBSEFO|char(10)|Brokerage BSE FO Basket Code|
 |cBrkgBasketBSECDS|char(10)|Brokerage BSE CDS Basket Code|
+|cBrkgBasketNFOCOM|char(10)|Brokerage NSE Commodity Basket Code|
+|cBrkgBasketBFOCOM|char(10)|Brokerage BSE Commodity Basket Code|
+|cBrkgBasketMXEQ|char(10)|Brokerage MSEI - Equity Basket Code|
+|cBrkgBasketMXFO|char(10)|Brokerage MSEI - Derivative Basket Code|
 |dBrkgEffectDate|datetime|Brokerage Effect Date|
 |nDelCMBrkg|numeric(9,6)|NSE-CM Delivery Brokerage %|
 |nDelCMBrkgMin|numeric(8,4)|NSE-CM Delivery Brokerage Min|
