@@ -808,19 +808,19 @@ Update client’s registration status in Trading
             Closed 
 "segment" <<Choose Segment>>
            ALL [Default]
-           NSE-Cm = NSE
-           NSE-F&O = NFO
-           NSE-CDS = CNFO
-           NSE-SLBM = NSLB
-           NSE-COMM = NFOCOM
-           BSE-CM = BSE
-           BSE-F&O = BFO
-           BSE-CDS = CBFO
-           BSE COMM = BFOCOM
-           MCX = MCFO
-           MSEI-EQ =MXEQ
-           MSE- FO =MXFO
-           MTF = MTF
+           NSE
+           NFO
+           CNFO
+           NSLB
+           NFOCOM
+           BSE
+           BFO
+           CBFO
+           BFOCOM
+           MCFO
+           MXEQ
+           MXFO
+           MTF
            CDSL
 }
       ```
@@ -831,7 +831,7 @@ Update client’s registration status in Trading
   "key": "ezhDMEI5ND4MLE3YwNH0=",
   "ucc": "L18000",
   "status":"Active",
-  "segment":"NSE-CM"
+  "segment":"NSE"
 }
 ```
     </td>
