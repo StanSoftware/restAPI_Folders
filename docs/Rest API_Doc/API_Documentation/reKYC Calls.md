@@ -831,7 +831,7 @@ Update client’s registration status in Trading
   "key": "ezhDMEI5ND4MLE3YwNH0=",
   "ucc": "L18000",
   "status":"Active",
-  "segment":"NSE"
+  "segments":"NSE"
 }
 ```
     </td>
