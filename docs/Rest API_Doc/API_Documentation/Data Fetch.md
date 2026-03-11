@@ -3102,6 +3102,101 @@ ___
 ___
 
 
+## getArbitrageData ##
+
+**Endpoint** : getArbitrageData
+
+
+*This API Call can be fetched after generating the ARBITRAGE PROCESS in SharePro*
+
+
+
+<pre language="html">
+<table style={{"width":"100%"}}>
+  <thead style={{"height":"25px","padding":"10px"}}>
+    <tr>
+      <th>Data </th>
+      <th>UAT Sample</th>
+     </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td colspan="2">**JSon Request:**</td>
+    </tr>
+    <tr>
+    <td>
+      ```
+      {
+    "key": "ezM4MEQyQTJBLUE0Q0ItNDY2OS05QjgwLTQxMjZDNTFBOEMyQn0=",
+    "cCo": "01",
+    "dDateFrom": "20250402",
+    "dDateTo": "20250402"
+}
+      ```
+    </td>
+      <td>
+      ```
+      [
+    {
+        "trdt": "2025-04-02T00:00:00",
+        "nse_alias": "A0001     ",
+        "Instr_type": "EQUITY",
+        "NSE_ITEMCD": "GOLDBEES    ",
+        "EXP_DATE": "1900-01-01T00:00:00",
+        "CONT_RATE": 0.0000,
+        "NSE_SERIES": "EQ",
+        "descr": "GOLDBEES     EQ",
+        "OpQty": -25.0,
+        "OpRate": 76.7100,
+        "BuyQty": 0.0,
+        "BuyAvgRate": 0.0000,
+        "BuyAmount": 0.00,
+        "SaleQty": 0.0,
+        "SaleAvgRate": 0.0000,
+        "SaleAmount": 0.00,
+        "CloseRate": 76.2300,
+        "DiffAmount": 0.00,
+        "NetQty": -25.0,
+        "DayNetQty": 0.0,
+        "m2m": 0.00,
+        "NetPlAmt": 12.00
+    },
+    {
+        "trdt": "2025-04-02T00:00:00",
+        "nse_alias": "A0015     ",
+        "Instr_type": "EQUITY",
+        "NSE_ITEMCD": "CAMLINFINE  ",
+        "EXP_DATE": "1900-01-01T00:00:00",
+        "CONT_RATE": 0.0000,
+        "NSE_SERIES": "EQ",
+        "descr": "CAMLINFINE   EQ",
+        "OpQty": 0.0,
+        "OpRate": 0.0000,
+        "BuyQty": 1000.0,
+        "BuyAvgRate": 173.1585,
+        "BuyAmount": 173158.47,
+        "SaleQty": 0.0,
+        "SaleAvgRate": 0.0000,
+        "SaleAmount": 0.00,
+        "CloseRate": 172.4000,
+        "DiffAmount": 0.00,
+        "NetQty": 1000.0,
+        "DayNetQty": 1000.0,
+        "m2m": -758.50,
+        "NetPlAmt": -758.47
+    },............................................
+]
+      ```
+    </td>
+    </tr>
+
+     </tbody>
+</table>
+</pre>
+
+
+
 
 
 
