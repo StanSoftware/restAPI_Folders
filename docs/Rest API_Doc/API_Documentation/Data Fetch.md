@@ -3121,10 +3121,21 @@ ___
   </thead>
 
   <tbody>
+
     <tr>
       <td colspan="2">**JSon Request:**</td>
     </tr>
     <tr>
+    <td>
+      ```
+      {
+    "key": "<<RestAPI Key>>",
+    "cCo": "<<Co>>",
+    "dDateFrom": "<<DateFrom>>",
+    "dDateTo": "<<DateTo>>"
+}
+      ```
+    </td>
     <td>
       ```
       {
@@ -3133,6 +3144,65 @@ ___
     "dDateFrom": "20250402",
     "dDateTo": "20250402"
 }
+      ```
+    </td>
+     </tr>
+     <tr  style={{"height":"20px","padding":"10px"}}>
+      <td colspan="2">**JSon Response:**</td>
+    </tr>
+     <tr>
+     <td>
+      ```
+      [
+    {
+        "trdt": "<<trade_date>>",
+        "nse_alias": "<<UCC>>",
+        "Instr_type": "<<SEGMENT>>",
+        "NSE_ITEMCD": "<<SCRIP_SYMBOL>>    ",
+        "EXP_DATE": "<<EXP_DATE>>",
+        "CONT_RATE": "<<CONT_RATE>>",
+        "NSE_SERIES": "<<NSE_SERIES>>",
+        "descr": "<<SCRIP_NAME>>",
+        "OpQty": <<OPENING_QTY>>,
+        "OpRate": <<OPENING_RATE>>,
+        "BuyQty": <<BuyQty>>,
+        "BuyAvgRate": <<BuyAvgRate>>,
+        "BuyAmount": <<BuyAmount>>,
+        "SaleQty": <<SaleQty>>,
+        "SaleAvgRate": <<SaleAvgRate>>,
+        "SaleAmount": <<SaleAmount>>,
+        "CloseRate": <<CloseRate>>,
+        "DiffAmount": <<DiffAmount>>,
+        "NetQty": <<NetQty>>,
+        "DayNetQty": <<DayNetQty>>,
+        "m2m": <<m2m>>,
+        "NetPlAmt": <<NetPlAmt>>
+    },
+    {
+        "trdt": "<<TRADE_DATE>>",
+        "nse_alias": "<<UCC>>    ",
+        "Instr_type": "<<SEGMENT>>",
+        "NSE_ITEMCD": "<<SCRIP_SYMBOL>> ",
+        "EXP_DATE": "<<EXP_DATE>>",
+        "CONT_RATE": "<<CONT_RATE>>",
+        "NSE_SERIES": "<<NSE_SERIES>>",
+        "descr": "<<SCRIP_NAME>>",
+        "OpQty": <<OpQty>>,
+        "OpRate": <<OpRate>>,
+        "BuyQty": <<BuyQty>>,
+        "BuyAvgRate": <<BuyAvgRate>>,
+        "BuyAmount": <<BuyAmount>>,
+        "SaleQty": <<SaleQty>>,
+        "SaleAvgRate": <<SaleAvgRate>>,
+        "SaleAmount": <<SaleAmount>>,
+        "CloseRate": <<CloseRate>>,
+        "DiffAmount": <<DiffAmount>>,
+        "NetQty": <<NetQty>>,
+        "DayNetQty": <<DayNetQty>>,
+        "m2m": <<m2m>>,
+        "NetPlAmt": <<NetPlAmt>>
+    },............................................
+]
       ```
     </td>
       <td>
