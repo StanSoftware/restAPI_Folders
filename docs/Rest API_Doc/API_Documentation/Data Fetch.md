@@ -110,6 +110,11 @@ sidebar_position: 1
         "AnnualIncome"
         "RMCode"
         "RMName"
+        "CTCLSystems"
+        "NomOptoutDt"
+        "kycNo"
+        "occupation"
+        "uid"
       }
       ]
         ```
@@ -161,6 +166,9 @@ sidebar_position: 1
             "RMName": null
             "CTCLSystems": " ",
             "NomOptoutDt": "2023-03-21T00:00:00"
+            "kycNo": null,
+            "occupation": "                         ",
+            "uid": "0131 "
           }
         ]
 

@@ -13,6 +13,7 @@ This document lists the changes made in the API in sequential order:
 - <u>*NewClientRgistration*</u>: Boolean Parameters added KRACompStatus
 -30-09-2023 - AP Level restAPI calls added to aid integration in AP interfaces.
 
+- 08-05-2026 : <u>*Get Client Details*</u>:  added a parameter uid for the Aadhaar number
 ____
 
 
