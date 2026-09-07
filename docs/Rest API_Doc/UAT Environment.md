@@ -5,11 +5,11 @@ sidebar_position: 2
 
 **The REST API can be tested at the UAT url:**
 
-*http://cloud.stansoftware.com:81/shrdbms/dotnet/api/stansoft/endpoint*
+*https://cloud.stansoftware.com/shrdbms/dotnet/api/stansoft/endpoint*
 
 An example of a REST API call at the UAT is shown below:
 
-*http://cloud.stansoftware.com:81/shrdbms/dotnet/api/stansoft/ClientPANCheck*
+*https://cloud.stansoftware.com/shrdbms/dotnet/api/stansoft/ClientPANCheck*
 
 
 **UAT API Key**: ezhDMEI5ND4MLE3YwNH0=
